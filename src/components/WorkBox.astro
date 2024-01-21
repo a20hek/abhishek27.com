@@ -8,11 +8,11 @@ const { title, desc, date, cslink, tags, projectlink, color } = Astro.props
 >
 	<img class="mr-6" src="/pow.svg" alt="proof of work" />
 	<div class="py-auto my-auto">
-		<p class="text-md my-2 font-light uppercase">{date}</p>
+		<p class="text-md my-2 text-gray-50 font-light uppercase">{date}</p>
 
 		<a target="_blank" rel="noreferrer" href={projectlink}>
 			<div class="group flex items-center">
-				<p class="my-2 mr-2 text-3xl font-semibold">{title}</p>
+				<p class="my-2 mr-2 text-3xl text-gray-50 font-semibold">{title}</p>
 				<svg
 					class="stroke-[#808080] duration-200 group-hover:stroke-gray-200"
 					xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ const { title, desc, date, cslink, tags, projectlink, color } = Astro.props
 				</svg>
 			</div>
 		</a>
-		<p class="py-2 text-lg font-light">{desc}</p>
+		<p class="py-2 text-lg font-light text-gray-50">{desc}</p>
 		<div class="flex flex-wrap py-2">
 			{
 				tags.map((tag: string) => (
