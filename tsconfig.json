@@ -1,3 +1,13 @@
 {
-	"extends": "astro/tsconfigs/base"
+	"extends": "astro/tsconfigs/base",
+	"include": [
+		"src",
+		".eslintrc.cjs",
+		"**/*.js",
+		"**/*.cjs",
+		"**/*.mjs",
+		"../reset.d.ts",
+		"./tailwind.config.ts",
+		"./astro.config.ts"
+	]
 }
