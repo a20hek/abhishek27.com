@@ -1,0 +1,370 @@
+---
+import CSHeading from '../../../components/blog/CSHeading.astro'
+import CSDesc from '../../../components/blog/CSDesc.astro'
+import WHeading from '../../../components/blog/WHeading.astro'
+import WHeading2 from '../../../components/blog/WHeading2.astro'
+import WText from '../../../components/blog/WText.astro'
+import Layout from '../../../layouts/Layout.astro'
+---
+
+<Layout title="Acadknit">
+	<div class="md:mx-48">
+		<CSHeading>The Evolution of Acadknit - a Product Case Study</CSHeading>
+		<CSDesc>
+			A case study covering the evolution of a concept from an idea to a design to a simple website
+			to a complex app
+		</CSDesc>
+	</div>
+	<img style={{ width: '100vw' }} src="/acadcover.png" alt="acadknit" />
+	<video
+		src="/acadknit/acadknitvid.mp4"
+		controls
+		autoplay
+		muted
+		class="mx-auto mt-6 w-full max-w-4xl px-8"></video>
+	<div class="md:mx-48">
+		<WHeading>A short primer</WHeading>
+		<WText>
+			This one&apos;s going to be something new, and that is the reason why I could not tag this as
+			merely a UI/UX case or a web/mobile app development case study. More than a case study, this
+			project also shows the evolution of my skillset; from starting as a UI/UX designer newbie in
+			July 2021 to ending up with a good understanding of design and proficiency in web and mobile
+			app development in April 2022.
+		</WText>
+		<WHeading>The Problem</WHeading>
+		<WText>
+			Back in June 2021, when colleges were still online, I was pursuing my first year of
+			engineering, and was having a tough time finding people who were interested in learning React,
+			because there was no way to stay in touch with a ton of people, and know what they were good
+			at. I was a total noob back then and wanted React study-buddies so that I could accelerate my
+			learning process. I searched for days, but to no avail.
+		</WText>
+		<WText>
+			This made me think - if there were a medium through which I could find peers in my college who
+			were interested in the same things that I was, it&apos;d have been a lot easier for me.
+		</WText>
+		<WText> But there was nothing like that. So, I, a total noob decided to build it. </WText>
+		<WHeading>The Solution</WHeading>
+		<WText>
+			An app that could help students to find peers with similar interests within the same campus.
+			Where students could collaborate, form communities and learn from each other, which would help
+			them navigate the hectic job of being an engineering student easier. Because of the pandemic,
+			it was already difficult for students to connect with like-minded people. Even if there
+			weren&apos;t a pandemic, it would have been seemingly impossible to keep track of over a
+			thousand fellow students, their interests, and their skills. Now, to have all that information
+			at our fingertips was something.
+		</WText>
+		<WHeading2>Goals</WHeading2>
+		<WText>
+			○ Help students find peers with similar interests/skills.
+			<br />○ Help them form clubs/communities on the platform.
+		</WText>
+		<WHeading>Research</WHeading>
+		<WHeading2>Target Audience</WHeading2>
+		<WText>
+			Age:17-25
+			<br />
+			Occupation: Students
+		</WText>
+		<WHeading2>Existing apps with a similar idea</WHeading2>
+		<WText>None</WText>
+		<WHeading>v1</WHeading>
+		<WText> What could be the minimum set of features to help this idea get up and running? </WText>
+		<WText>
+			Well, spending time building the club and chat sections would have taken a while, so I decided
+			to build only the most important feature-a database of interests and skills that would help a
+			student find peers with similar interests on search. The rest of the features could wait till
+			v2.
+		</WText>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto'
+			}}
+			src="/acadknit/1.png"
+			alt="acadknit"
+		/>
+		<WText>
+			This is how i designed the landing page of the app with a clear and precise CTA (a search bar
+			to search for people by their skills) which acted as a hook to get users to sign up, along
+			with the use cases of the website.
+		</WText>
+		<img
+			src="/acadknit/2.png"
+			alt="acadknit"
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto'
+			}}
+		/>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto',
+				marginTop: '5em'
+			}}
+			src="/acadknit/3.png"
+			alt="acadknit"
+		/>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto',
+				marginTop: '4em'
+			}}
+			src="/acadknit/4.png"
+			alt="acadknit"
+		/>
+		<WHeading>UI Iterations</WHeading>
+		<WText>
+			So, when I rolled out the production build and shared this website with my friends to try out,
+			I observed a common problem that they were facing. Almost all of them entered all of their
+			interests in one go, whereas, I expected them to click the add icon after typing an interest.
+			Now, I had a problem to solve, and this is how I solved it:
+		</WText>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto',
+				marginTop: '1em',
+				marginBottom: '1em'
+			}}
+			src="/acadknit/5.png"
+			alt="acadknit"
+		/>
+		<WText>
+			So, when I rolled out the production build and shared this website with my friends to try out,
+			I observed a common problem that they were facing. Almost all of them entered all of their
+			interests in one go, whereas, I expected them to click the add icon after typing an interest.
+			Now, I had a problem to solve, and this is how I solved it:
+		</WText>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '40%',
+				height: 'auto',
+				marginTop: '3em',
+				marginBottom: '3em'
+			}}
+			src="/acadknit/6.png"
+			alt="acadknit"
+		/>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto',
+				marginTop: '3em',
+				marginBottom: '3em'
+			}}
+			src="/acadknit/7.png"
+			alt="acadknit"
+		/>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto',
+				marginTop: '3em',
+				marginBottom: '3em'
+			}}
+			src="/acadknit/8.png"
+			alt="acadknit"
+		/>
+		<WHeading>Development</WHeading>
+		<WText>The project was built using Next.js and Firebase.</WText>
+		<WHeading2>Next.js</WHeading2>
+		<WText>
+			Next.js markets itself as “The React Framework for Production”, and rightly so. It enables
+			developers to create server-side rendered and static web applications.
+		</WText>
+		<WText>
+			It enhances the DX by providing many features like:
+			<br />
+			○ Page-based routing
+			<br />
+			○ A built-in router (no need for React Router)
+			<br />
+			○ API routes (write backend code using Node.js)
+			<br />
+			○ Super fast builds for development/production
+			<br />
+			○ Image and font optimization
+			<br />
+			○ Built-in ESLint and TypeScript support
+			<br />○ + tons more
+		</WText>
+		<WHeading2>Firebase</WHeading2>
+		<WText>
+			Firebase is a Backend-as-a-Service (BaaS) app development platform that provides hosted
+			backend services such as a realtime database, cloud storage, authentication, crash reporting,
+			machine learning, remote configuration, and hosting for your static files. I decided to go
+			with Firebase, compared to a traditional backend framework because:
+			<br />
+			a) I wouldn&apos;t have to pay any bucks to host the backend
+			<br />
+			b) Developing APIs and handling authentication would have taken a lot of time.
+		</WText>
+		<WHeading2>Coding it out</WHeading2>
+		<WText>
+			I wrote a custom hook to handle everything related to authentication (registration, logging
+			in, authenticated state).
+		</WText>
+		<WText>
+			So, to give you a context, I had never worked on any React project which involved data
+			fetching and handling the fetched data before this, and I learnt a lot of new things about the
+			same during the development process.
+		</WText>
+		<WText>
+			And I came to the conclusion that two things are difficult as an intermediate React Developer:
+			<br />
+			a) State Management
+			<br />
+			b) Data fetching and handling
+		</WText>
+		<WText>
+			I was able to complete the development in less than a week, all thanks to the online classes
+			back then, and due to some valuable help from the Reactiflux discord community.
+		</WText>
+		<WHeading>Onto v2</WHeading>
+		<WText>
+			I had designed and developed the website impulsively. Soon, I figured that the website acted
+			only as a database of skills and interests of students in the college, which provided just the
+			email address of the person you wanted to connect with, and won&apos;t be a good hook for user
+			retention.
+		</WText>
+		<WText>
+			So, I decided to build an app, a better version, with an inbuilt feature to form clubs, chat
+			with others, schedule events, get news about what&apos;s happening in the college, and much
+			more.
+		</WText>
+		<WHeading>UI</WHeading>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto',
+				marginTop: '4em',
+				marginBottom: '4em'
+			}}
+			src="/acadknit/9.png"
+			alt="acadknit"
+		/>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto',
+				marginTop: '4em',
+				marginBottom: '4em'
+			}}
+			src="/acadknit/10.png"
+			alt="acadknit"
+		/>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto',
+				marginTop: '4em',
+				marginBottom: '4em'
+			}}
+			src="/acadknit/11.png"
+			alt="acadknit"
+		/>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto',
+				marginTop: '4em',
+				marginBottom: '4em'
+			}}
+			src="/acadknit/12.png"
+			alt="acadknit"
+		/>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto',
+				marginTop: '4em',
+				marginBottom: '4em'
+			}}
+			src="/acadknit/13.png"
+			alt="acadknit"
+		/>
+		<img
+			style={{
+				marginRight: 'auto',
+				marginLeft: 'auto',
+				width: '70%',
+				height: 'auto',
+				marginTop: '4em',
+				marginBottom: '4em'
+			}}
+			src="/acadknit/14.png"
+			alt="acadknit"
+		/>
+
+		<WHeading>Development</WHeading>
+		<WText>The project was built using React Native and AWS Amplify.</WText>
+		<WHeading2>React Native</WHeading2>
+		<WText>
+			React Native is a Javascript-based mobile app framework that allows you to build
+			natively-rendered mobile apps for iOS and Android while maintaining the same codebase. I
+			decided to abort the Expo setup when it wasn&apos;t working well with some of the features and
+			went with the bare minimum setup instead.
+		</WText>
+		<WHeading2>AWS Amplify</WHeading2>
+		<WText>
+			AWS Amplify is an open-source JavaScript library provided by Amazon Web Services (AWS) that
+			enables developers to build applications with cloud services on the web or mobile platforms. I
+			chose AWS Amplify over Firebase because the latter is slow with React Native apps.
+		</WText>
+		<WHeading2>Coding it out</WHeading2>
+		<WText>
+			This was my first time using React Native, so it took me some time to get used to it(having
+			shifted from being a web developer).
+			<br />
+			There were three different navigation patterns used in the app: Stack, Bottom Tabs, and Top Tabs.
+			This made me well versed with React Navigation.
+			<br />
+			I used NativeBase as the component library, because of the similarities it has with Chakra UI(Chakra&apos;s
+			still much better though, but they could really use the nested text feature that NativeBase has).
+			<br />
+			A major chunk of the development time was spent trying to figure out the data modelling aspect
+			of Amplify. It took a lot of trial and error to finally code out the right schema.
+			<br />
+			After around a month and some gazillion bunked lectures, I was able to complete the development
+			of the app.
+		</WText>
+		<WHeading>
+			And that&apos;s a wrap!
+			<br />
+			Thank you for reading :)
+		</WHeading>
+		<br />
+		<br />
+		<br />
+		<br />
+	</div>
+</Layout>

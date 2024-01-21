@@ -1,0 +1,87 @@
+---
+const {title="abhishek ajithkumar"}=Astro.props
+---
+
+<html lang="en"> 
+	<head>
+		<link href="/favicons/favicon.ico" rel="shortcut icon" />
+		<link href="/favicons/site.webmanifest" rel="manifest" />
+		<link href="/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+		<link href="/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+		<link href="/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" cross-origin="true" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Spartan:wght@300;400;500;600;700;800&family=Inter:wght@100;300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../globals.css" />
+		<title>{title}</title>
+      <meta name="robots" content="follow, index" />
+      <meta
+        name="description"
+        content="tinkerer on the internet; fulltime noob, parttime developer"
+      />
+      <meta
+        name="keywords"
+        content="Abhishek Ajithkumar, developer, designer"
+      />
+      <link rel="canonical" href={`https://abhwshek.com`} />
+      <meta property="og:title" content="abhishek ajithkumar" />
+      <meta
+        property="og:description"
+        content="tinkerer on the internet; fulltime noob, parttime developer"
+      />
+      <meta property="og:site_name" content="Abhishek Ajithkumar" />
+      <meta property="og:url" content={`https://abhwshek.com`} />
+      <meta property="og:image" content="https://abhwshek.com/abhwshek.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@abhwshek" />
+
+      <meta name="twitter:title" content="Abhishek Ajithkumar" />
+      <meta
+        name="twitter:description"
+        content="tinkerer on the internet; fulltime noob, parttime developer"
+      />
+      <meta name="twitter:image" content="https://abhwshek.com/abhwshek.png" />
+
+      <meta charset="UTF-8" />
+      <meta http-equiv="Content-Language" content="en-us" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<div class="min-h-screen bg-[#0e0e0e]">
+			<div class="mx-auto flex min-w-fit justify-evenly pt-6 md:w-3/4">
+				<a
+					href="/#"
+					class="bg-gradient-to-b from-[#128779] to-[#30d0b8] bg-clip-text font-sans text-lg text-transparent md:font-medium"
+				>
+					home
+				</a>
+				<a
+					href="/#PoW"
+					class="bg-gradient-to-b from-[#128779] to-[#30d0b8] bg-clip-text font-sans text-lg text-transparent md:font-medium"
+				>
+					work
+				</a>
+				<a
+					href="/#about"
+					class="bg-gradient-to-b from-[#128779] to-[#30d0b8] bg-clip-text font-sans text-lg text-transparent md:font-medium"
+				>
+					about
+				</a>
+				<a
+					href="mailto:abbhishekk27@gmail.com"
+					class="bg-gradient-to-b from-[#128779] to-[#30d0b8] bg-clip-text font-sans text-lg text-transparent md:font-medium"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					hit me up
+				</a>
+			</div>
+			<slot />
+		</div>
+	</body>
+</html>

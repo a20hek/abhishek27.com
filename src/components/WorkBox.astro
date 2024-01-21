@@ -1,0 +1,54 @@
+---
+const { title, desc, date, cslink, tags, projectlink, color } = Astro.props
+---
+
+<div
+	class="sticky top-0 z-10 flex h-screen px-8 md:ml-auto md:mr-0 md:w-1/2"
+	style={{ backgroundColor: color }}
+>
+	<img class="mr-6" src="/pow.svg" alt="proof of work" />
+	<div class="py-auto my-auto">
+		<p class="text-md my-2 font-light uppercase">{date}</p>
+
+		<a target="_blank" rel="noreferrer" href={projectlink}>
+			<div class="group flex items-center">
+				<p class="my-2 mr-2 text-3xl font-semibold">{title}</p>
+				<svg
+					class="stroke-[#808080] duration-200 group-hover:stroke-gray-200"
+					xmlns="http://www.w3.org/2000/svg"
+					width="14"
+					height="14"
+					fill="none"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M13 1 1 13M3 1h10v10"></path>
+				</svg>
+			</div>
+		</a>
+		<p class="py-2 text-lg font-light">{desc}</p>
+		<div class="flex flex-wrap py-2">
+			{
+				tags.map((tag: string) => (
+					<div class="my-1 mr-2 rounded-sm bg-gradient-to-br from-[#116E6D] to-[#21B89D] px-2 py-1">
+						<p class="text-[12px] font-bold uppercase text-gray-900">{tag}</p>
+					</div>
+				))
+			}
+		</div>
+		{
+			cslink && (
+				<div class="relative flex items-center py-5">
+					<span class="mr-2 text-xl font-light text-gray-50">
+						<a target="_blank" rel="noreferrer" href={cslink}>
+							<p class="drop-shadow-[0_1px_8px_rgba(0,255,209,0.9)]">view case study</p>
+						</a>
+					</span>
+					<div class="flex-grow border-t border-[#587171] drop-shadow-[0_1px_8px_rgba(0,255,209,0.9)]" />
+				</div>
+			)
+		}
+	</div>
+</div>

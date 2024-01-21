@@ -1,0 +1,137 @@
+---
+import SkillBox from '../components/SkillBox.astro'
+import WorkBox from '../components/WorkBox.astro'
+import Mouse from '../components/Mouse.astro'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout>
+	<div class="top-0 z-0 flex h-screen w-fit flex-col justify-center align-middle md:sticky">
+		<div class="relative -top-24 md:-top-4 md:ml-8">
+			<h1
+				class="bg-gradient-to-b from-gray-50 to-gray-500 bg-clip-text py-2 pl-8 font-sans text-6xl font-semibold text-transparent md:text-8xl"
+			>
+				abhishek
+				<br />
+				ajithkumar
+			</h1>
+			<p
+				class="bg-clip-text px-8 pt-8 font-sans text-2xl font-light text-[#0CAB94] text-transparent md:pl-10"
+			>
+				blending aesthetics with algorithms
+			</p>
+			<p class="bg-clip-text px-8 pt-1 font-sans text-lg text-[#0CAB94] text-transparent md:pl-10">
+				dev{' '}
+				<a href="https://superteam.fun" class="font-medium"> @superteamearn </a>
+			</p>
+			<div class="flex w-fit justify-around pt-8 pl-8 md:pl-10">
+				<SkillBox name="Next.js" icon="/nextlogo.svg" delay={0.6} />
+				<SkillBox name="React Native" icon="/rnlogo.svg" delay={0.7} />
+				<SkillBox name="TypeScript" icon="/tslogo.svg" delay={0.8} />
+				<SkillBox name="Figma" icon="/figmalogo.svg" delay={0.9} />
+			</div>
+		</div>
+	</div>
+	<Mouse />
+	<div id="PoW">
+		<WorkBox
+			title="superteam earn"
+			desc="revamped the ui and functionality for earn, a platform connecting developers, designers, and content creators with web3 earning opportunities through bounties and project grants. streamlined the user experience, eradicated critical bugs, and now leading the rollout of new features."
+			tags={['Next.js', 'TypeScript']}
+			date="July 2023 - Present"
+			projectlink="https://earn.superteam.fun"
+			color="#00332C"
+		/>
+		<WorkBox
+			title="proto"
+			desc="have been an integral part of Proto's journey from a global hackathon-winning prototype to a seed-funded venture. this involved building the MVP website, and subsequently leading the mobile app's development from its conception till the launch of v1."
+			tags={['React Native', 'TypeScript']}
+			date="December 2022 - December 2023"
+			projectlink="https://proto-geo.xyz"
+			color="#002924"
+		/>
+		<WorkBox
+			title="elvishbhai.com"
+			desc="did it for the lulz, alongside some of my frens"
+			tags={['Go', 'Next.js', 'TypeScript']}
+			date="October 2023"
+			projectlink="https://elvishbhai.com"
+			color="#001F1C"
+		/>
+		<WorkBox
+			title="acadknit"
+			desc="utilizing react native, next.js, and aws amplify, for the web and mobile, Acadknit aimed to connect students on campus through interest-based clubs. although the project was short-lived, it provided critical insights into the challenges of community engagement within academic settings."
+			tags={['React Native', 'Next.js', 'AWS Amplify']}
+			date="July 2021 - April 2022"
+			cslink="https://abhwshek.com/work/acadknit"
+			projectlink="https://abhwshek.com/work/acadknit"
+			color="#001513"
+		/>
+		<WorkBox
+			title="bonding over bindings"
+			desc="independantly designed and subsequently built using next.js and firebase, Bonding Over Bindings was a book club platform created to cultivate a reading culture in navi mumbai. the platform simplified various aspects of community-based reading, from book selection to the facilitation of insightful discussions."
+			tags={['Next.js', 'Firebase']}
+			date="October 2021"
+			projectlink="https://bob-ochre.vercel.app/"
+			color="#000b09"
+		/>
+	</div>
+	{/* <div class="z-20 flex h-16 bg-[#000] md:ml-auto md:mr-0  md:w-1/2"></div> */}
+	<div
+		id="about"
+		class="z-50 bg-gradient-to-br from-[#195353] to-[#071818] p-8 md:ml-auto md:mr-0 md:w-1/2"
+	>
+		<div class="relative flex items-center pt-5">
+			<span class="mr-2 text-3xl font-semibold text-gray-50"> about </span>
+			<div class="flex-grow border-t border-[#587171]"></div>
+		</div>
+
+		<br />
+		<p class="pb-2 text-lg font-light">
+			21 <br /> tinkerer <br /> wannabe indie hacker <br /> permissionless work maxi <br /> noob <br
+			/>
+			<br />
+			<br /> and a lot more.
+		</p>
+
+		<div class="flex py-2">
+			<div class="mr-8">
+				<a target="_blank" rel="noreferrer" href="https://github.com/a20hek">
+					<svg
+						width="36"
+						height="36"
+						viewBox="0 0 48 48"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g clip-path="url(#clip0_619_429)">
+							<path
+								d="M24 0.594238C10.74 0.594238 0 11.3402 0 24.5942C0 35.2002 6.876 44.1942 16.41 47.3642C17.61 47.5902 18.05 46.8482 18.05 46.2102C18.05 45.6402 18.03 44.1302 18.02 42.1302C11.344 43.5782 9.936 38.9102 9.936 38.9102C8.844 36.1402 7.266 35.4002 7.266 35.4002C5.092 33.9122 7.434 33.9422 7.434 33.9422C9.844 34.1102 11.11 36.4142 11.11 36.4142C13.25 40.0842 16.728 39.0242 18.1 38.4102C18.316 36.8582 18.934 35.8002 19.62 35.2002C14.29 34.6002 8.688 32.5362 8.688 23.3402C8.688 20.7202 9.618 18.5802 11.158 16.9002C10.888 16.2942 10.078 13.8542 11.368 10.5482C11.368 10.5482 13.378 9.90424 17.968 13.0082C19.888 12.4742 21.928 12.2102 23.968 12.1982C26.008 12.2102 28.048 12.4742 29.968 13.0082C34.528 9.90424 36.538 10.5482 36.538 10.5482C37.828 13.8542 37.018 16.2942 36.778 16.9002C38.308 18.5802 39.238 20.7202 39.238 23.3402C39.238 32.5602 33.628 34.5902 28.288 35.1802C29.128 35.9002 29.908 37.3722 29.908 39.6202C29.908 42.8322 29.878 45.4122 29.878 46.1922C29.878 46.8222 30.298 47.5722 31.528 47.3322C41.13 44.1842 48 35.1842 48 24.5942C48 11.3402 37.254 0.594238 24 0.594238"
+								fill="white"></path>
+						</g>
+						<defs>
+							<clipPath id="clip0_619_429">
+								<rect width="48" height="48" fill="white"></rect>
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</div>
+			<div>
+				<a target="_blank" rel="noreferrer" href="https://twitter.com/abhwshek">
+					<svg
+						width="36"
+						height="36"
+						viewBox="0 0 48 48"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M47.906 9.14017C46.109 9.93139 44.2052 10.4537 42.256 10.6902C44.3082 9.45667 45.8448 7.52226 46.582 5.24417C44.68 6.35417 42.572 7.16217 40.328 7.61217C38.8475 6.02903 36.8857 4.97902 34.7473 4.62518C32.6088 4.27134 30.4134 4.63348 28.5019 5.65536C26.5903 6.67724 25.0697 8.30168 24.1761 10.2764C23.2825 12.2512 23.0659 14.4657 23.56 16.5762C15.38 16.1902 8.134 12.2602 3.28 6.32417C2.39759 7.8238 1.93733 9.53423 1.948 11.2742C1.948 14.6942 3.688 17.7002 6.324 19.4662C4.76172 19.4164 3.23394 18.994 1.868 18.2342V18.3542C1.86711 20.627 2.65254 22.8301 4.09101 24.5897C5.52949 26.3493 7.53243 27.5571 9.76 28.0082C8.3166 28.3949 6.80483 28.453 5.336 28.1782C5.96824 30.1342 7.19533 31.8441 8.84603 33.0692C10.4967 34.2943 12.4887 34.9736 14.544 35.0122C11.0631 37.7441 6.76495 39.2268 2.34 39.2222C1.56 39.2222 0.782 39.1762 0 39.0882C4.51142 41.9768 9.75703 43.5102 15.114 43.5062C33.22 43.5062 43.11 28.5142 43.11 15.5362C43.11 15.1162 43.11 14.6962 43.08 14.2762C45.012 12.8859 46.6785 11.1598 48 9.18017L47.906 9.14017Z"
+							fill="white"></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</Layout>
